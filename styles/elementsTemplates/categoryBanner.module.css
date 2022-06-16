@@ -1,0 +1,53 @@
+.main {
+    margin: 0px;
+    width: 100%;
+
+}
+.style {
+    overflow : hidden;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bannerContainer {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.bannerImage {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.bannerText {
+    position : absolute;
+    top : 0;
+    z-index: 2;
+    height: 70vh;
+    top: 20%;
+    width: 50%;
+}
+
+.bannerTextCentered {
+    font-size: 48px;
+    color: white;
+    height: 70vh;
+    text-align: center;
+    line-height: 0.9!important;
+}
+
+.bannerTextSmall {
+    font-size: 24px!important;
+}

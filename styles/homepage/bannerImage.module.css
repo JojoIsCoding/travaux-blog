@@ -1,0 +1,73 @@
+.bgImage {
+    background: url("/assets/house-0.jpg") no-repeat center;
+    filter: brightness(0.5);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+} 
+
+.bannerText {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 60%;
+    transform: translate(-0%, -50%);
+    text-align: left;
+}
+
+.bannerTitle {
+    font-size: 60px;
+    color: white;
+}
+
+.bannerSmallText{
+    font-size: 24px;
+    color: white;
+}
+
+@media (max-width: 1070px) {
+    .bannerTitle {
+        font-size: 48px;
+    }
+
+    .bannerSmallText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bannerText {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translate(-0%, -50%);
+        text-align: center;
+    }
+
+    .bannerSmallText{
+        font-size: 18px;
+        color: white;
+    }
+    
+    .bannerTitle {
+        font-size: 48px;
+        color: white;
+    }
+}
+
+.textInBanner {
+    opacity: 1;
+    transition : 0.4s;
+}
+
+.textBannerBadeout {
+    opacity: 0;
+    transition : 0.4s;
+}
+
+.textBannerFadein {
+    opacity: 1;
+    transition : 0.4s;
+}
+

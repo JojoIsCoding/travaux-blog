@@ -1,0 +1,75 @@
+.scrollMenu {
+    z-index: 5;
+    position: fixed;
+    top : 0;
+    width: 100%;
+    background-color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px rgb(211, 203, 203);
+}
+
+.scrollMenu>ul {
+    max-width: 1000px;
+    margin: auto;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+.scrollMenu>ul>li {
+    list-style-type: none;
+    letter-spacing: 1.5px;
+    color: rgb(81,147,141);
+}
+
+.scrollMenu>ul>li :hover {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(56, 136, 89);
+}
+
+.scrollMenu>ul>li :after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.4s ease;
+    bottom: 25%;
+  }
+  .scrollMenu>ul>li :hover::after {
+    width: 30px;
+    height: 3px;
+    background-color: rgb(56, 136, 89);
+  }
+
+.navIcon {
+    display: none;
+}
+
+.navItem, .navIcon {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 911px) {
+    .scrollMenu>ul>li {
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .scrollMenu>ul {
+        padding-left: 10px!important;
+    }
+
+    .navItem {
+        display: none
+    }
+    .navIcon {
+        display: block
+    }
+}

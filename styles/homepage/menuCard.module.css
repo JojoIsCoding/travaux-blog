@@ -1,0 +1,117 @@
+
+.dummyContainer {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .cardDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: auto;
+    margin-top: 60px;
+    background: none;
+  }
+  
+  .image {
+    max-width: 550px;
+    height: 350px;
+    width: 100%;
+    background-color: rgb(61, 151, 173);
+  }
+  
+  .text{
+    max-width: 550px;
+    width: 100%;
+    height: 350px;
+    padding : 25px;
+    font-size: 24px;
+    background-color: rgb(81,147,141);
+    color: white;
+  }
+  
+@media (max-width: 900px) {
+  .cardDiv {
+    flex-direction: column;
+    max-width: 550px;
+
+  }
+
+  .image, .text {
+    margin-bottom: 20px;
+  }
+}
+
+.blankSpace {
+  display: flex;
+  width: 100%;
+}
+
+.categoryBlock {
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.3);
+  color: rgb(81,147,141);
+  font-size: 28px;
+  width: 25%;
+  margin: auto;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  border: solid 3px rgb(81,147,141);
+}
+
+
+.normalDiv {
+  padding-bottom: 75px;
+}
+
+.alternateDiv {
+  background: linear-gradient(0.25turn, #51938d, #ebf8e1, #f69d3c);;
+  padding-bottom: 75px;
+}
+
+.installationsContainer{
+  background: linear-gradient(#010318, #101741, #393c63);
+}
+
+.recentsRoute {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0.25turn, rgb(63, 135, 166),
+  rgb(235, 248, 225),
+  rgb(246, 157, 60));
+  text-transform: uppercase;
+}
+
+.recentsRouteText {
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding-top: 24px;
+  font-size: 28px;
+  color: white;
+  height: 100px;
+  width: 25%;
+  background: rgba(170, 170, 170, 0.5);
+}
+
+.recentsRouteText>a:hover {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+  transition: 0.5s ease-out;
+}
+
+@media(max-width : 991px) {
+  .categoryBlock, .recentsRouteText {
+    width: 40%;
+    font-size: 24px;
+  }
+}

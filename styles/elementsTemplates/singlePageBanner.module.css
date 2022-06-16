@@ -1,0 +1,98 @@
+.main {
+    margin: 0px;
+    width: 100%;
+
+}
+.style {
+    overflow : hidden;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bannerContainer {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.bannerImage {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 550px;
+    filter: brightness(0.6);
+}
+
+.bannerText {
+    position : absolute;
+    top : 0;
+    z-index: 2;
+    height: 70vh;
+    top: 25%;
+    width: 50%;
+}
+
+.bannerTextCentered {
+    font-size: 60px;
+    color: white;
+    height: 70vh;
+    text-align: center;
+    line-height: 0.9!important;
+}
+
+.singlePageTitle {
+    font-size: 54px!important;
+}
+
+.smallBannerText {
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+@media (max-width: 1050px) {
+
+    .singlePageTitle {
+        font-size: 40px!important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+.bannerText {
+    position : absolute;
+    top : 0;
+    z-index: 2;
+    height: 70vh;
+    top: 25%;
+    width: 50%;
+}
+
+.bannerTextCentered {
+    font-size: 48px;
+    color: white;
+    height: 70vh;
+    text-align: center;
+    line-height: 1.2!important;
+}
+
+.singlePageTitle {
+    font-size: 34px!important;
+}
+
+.smallBannerText {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+}

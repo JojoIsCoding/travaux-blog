@@ -1,0 +1,114 @@
+.mainContent {
+    margin-top: 25px;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.sideContent {
+    margin-top: 25px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.cardImage {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.sidecardBox {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    background: rgb(81,147,141);
+}
+
+.sidecardImage {
+    margin-bottom: 10px;
+}
+
+.smallText {
+    padding-bottom: 10px;
+}
+
+.smallExcerpt {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+
+.asideTitle:hover {
+    text-decoration: none;
+    color: steelblue;
+    transition: 1s ease-in-out;
+}
+
+.largeCardText {
+    font-size: 36px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.readMore {
+    font-size: 18px;
+    color: steelblue;
+    font-weight: bold;
+}
+ 
+.recentTitle {
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.recentTitle:hover {
+    color: steelblue;
+    transition: 1s ease-in-out;
+}
+
+.recentSmallText {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 5px;
+}
+
+.recentExerpt {
+    font-size: 18px;
+    padding-bottom: 25px;
+
+}
+
+.excerpt {
+    padding-top: 15px;
+    text-align: justify;
+}
+
+@media (max-width: 911px) {
+    .sidecardcontainer {
+        display: flex;
+        flex-direction: row!important;
+        flex-wrap: wrap;
+    }
+
+    .sidecardElement {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .largeCardText {
+        font-size: 26px;
+        font-weight: bold;
+        justify-content: space-between;
+    }
+
+} 

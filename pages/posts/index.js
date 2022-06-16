@@ -1,0 +1,105 @@
+import StickyNavbar from '/components/elementsTemplates/StickyNavbar'
+import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.module.css'
+import singlePageStyles from '/styles/elementsTemplates/singlePage.module.css'
+import Footer from '/components/Footer'
+import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
+import { useRouter } from 'next/router'
+import React, { useState } from 'react'
+import Link from 'next/link'
+
+export const getStaticProps = async () => {
+
+  const res = await fetch('https://still-dusk-49483.herokuapp.com/api/blogposts/?populate=*');
+  const data = await res.json();
+
+  const length = data.data.length
+
+  return {
+    props: { 
+      posts: data,
+      length: length
+    }
+  }
+}
+
+const Posts = ({ posts, length }) => {
+
+  
+  const router = useRouter()
+
+  const [page, setPage] = useState(1)
+
+  function prev() {
+    router.push(`/recents?page=${page - 1}`);
+    setPage(page - 1)
+  }
+
+  function next() {
+    router.push(`/recents?page=${page + 1}`);
+    setPage(page + 1)
+  }
+
+  let startSlice = 0 + ((page - 1) * 9)
+  let endSlice = startSlice + 9
+  let maxPage = Math.ceil(length / 9)
+
+  return (
+
+    <div key='200'>
+
+      <StickyNavbar />
+
+      <div className={`${singlePageBannerStyles.main}`}>
+        <div className={`${singlePageBannerStyles.style} mx-0`}>
+          <div className={`${singlePageBannerStyles.bannerContainer} mx-0`}>
+            <img className={`${singlePageBannerStyles.bannerImage} mx-0`}
+              src={`/assets/aération-1.jpg`} alt="Image" /></div>
+          <div className={`${singlePageBannerStyles.bannerText}`}>
+            <div className={`${singlePageBannerStyles.bannerTextCentered}`}>
+              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>Articles Récents</h1>
+              <div className={`${singlePageBannerStyles.smallBannerText}`}>Prenez soin de votre maison à Alençon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={`container`}>
+        <div className={`row`}>
+          <div className={`container ${singlePageStyles.mainContent}`}>
+            <div className={`row ${singlePageStyles.recentPosts}`}>
+              {posts.data.slice(startSlice, endSlice).map(post => (
+                <div className={`col-12 col-lg-4 col-md-6`}>
+                  <img src={`${post.attributes.imageLink}`} width="100%" alt="image"/>
+                  <br/>
+                  <Link href={'/p/' + post.id + '/' + post.attributes.slug}
+                    key={post.id}>
+                    <div className={`${singlePageStyles.recentTitle}`}><a>{post.attributes.Title.toString()}</a></div>
+                  </Link>
+                    <div className={`${singlePageStyles.recentSmallText}`}>
+                      {post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<> {tag.attributes.name}</>)})}
+                    </div>
+                    <div className={`${singlePageStyles.recentExerpt}`}>
+                      {post.attributes.metadescription}
+                    </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div className={`pagination`}>
+        <button id='prev' onClick={() => { prev(); }}
+          disabled={page <= 1}>Précédent</button> - <span> {page} </span> - <button
+            id='next' onClick={() => { next(); }}
+            disabled={page == maxPage}>Suivant</button>
+      </div>
+
+      <BottomPageForm />
+      <Footer />
+    </div>
+  )
+}
+
+export default Posts

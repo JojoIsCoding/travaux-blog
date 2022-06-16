@@ -1,0 +1,92 @@
+.bottomForm{
+    width: 100%;
+    height: 400px;
+    margin-top: 35px;
+    padding: 25px;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url('/assets/maison/house-3.jpg');
+    margin-bottom: 0px;
+}
+
+.contactText{
+    font-size: 18px;
+    margin-top: 25px;
+    color: white;
+}
+
+.formElements{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .requestInput, .userInfoForm {
+     border-radius: 10px;
+     border: none;
+     padding: 15px;
+ }
+
+ .submitButton {
+     border-radius: 10px;
+     border: none;   
+
+ }
+
+ .requestInput {
+     height: 200px;
+ }
+
+ .userInfoForm {
+     width: 48%;
+     height: 40px;
+ }
+
+ .submitButton{
+     width: 100%;
+     height: 40px;
+ }
+
+ .submitButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+     transition: 0.4s ease-in;
+ }
+
+ .submitButton:active {
+     background-color: grey;
+     color: white;
+     transition: 0.1s;
+ }
+
+ .blankSpace {
+    display: flex;
+    width: 100%;
+  }
+  
+  .categoryBlock {
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgb(81,147,141);
+    font-size: 28px;
+    width: 25%;
+    margin: auto;
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    border: solid 3px rgb(81,147,141);
+  }
+  
+  @media(max-width : 991px) {
+    .categoryBlock {
+      width: 45%;
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width : 768px) {
+    .bottomForm{
+        height: 600px;
+    }
+  }

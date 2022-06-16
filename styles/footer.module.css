@@ -1,0 +1,11 @@
+.footerStyle{
+    margin: 0;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    align-items: center;
+    background-color: white;
+    border-top: solid 1px rgb(211, 203, 203);
+}
