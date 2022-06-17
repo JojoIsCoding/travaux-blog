@@ -22,8 +22,8 @@ const RecentPosts = () => {
                 <img src={`${post.attributes.imageLink}`}
                 alt="image" width="100%"/>
 
-                <div key={post.id} className={`${recentPostsStyles.smallText}`}>
-                    {post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div> 
+                <div key={post.id + "tinyText"} className={`${recentPostsStyles.smallText}`}>
+                    {post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<span key={Math.random()}>{tag.attributes.name}</span>)})} </div> 
                     
                 <h3 className={`${recentPostsStyles.link}`}><Link href={'/p/' + post.id + '/' + post.attributes.slug}><a>{post.attributes.Title}</a></Link></h3>
                 <p>{post.attributes.metadescription}</p>

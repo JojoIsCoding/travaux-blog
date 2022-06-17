@@ -83,7 +83,7 @@ const OnePost = ({ everyPost, post, postId }) => {
           <div className={`${singlePageStyles.mainContent} col-lg-9 col-12`}>
 
             <div className={`${singlePageStyles.categoryCard}`}>
-              <div key={post.data.id} className={`${singlePageStyles.smallText}`}> {post.data.attributes.Date} | {post.data.attributes.category.data.attributes.Name}, {post.data.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div>
+              <div key={post.data.id + "post"} className={`${singlePageStyles.smallText}`}> {post.data.attributes.Date} | {post.data.attributes.category.data.attributes.Name}, {post.data.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div>
               <ReactMarkdown>{post.data.attributes.Content}</ReactMarkdown>
             </div>
           </div>
@@ -98,7 +98,7 @@ const OnePost = ({ everyPost, post, postId }) => {
                 <div key={post.id} className={`${singlePageStyles.sidecardElement} col-12 px-0`}>
                   <img className={`${singlePageStyles.sidecardImage}`} src={`${post.attributes.imageLink}`} width="100%" alt="image" />
                   <h4><Link href={`http://localhost:3000/p/${post.id}/${post.attributes.slug}`}><a className={`${singlePageStyles.asideTitle}`}>{post.attributes.Title}</a></Link></h4>
-                  <div key={post.id} className={`${singlePageStyles.smallText}`}>{post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div>
+                  <div key={post.id + "smalltext"} className={`${singlePageStyles.smallText}`}>{post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div>
                   <div className={`${singlePageStyles.smallExcerpt}`}>{post.attributes.metadescription}</div> 
                 </div>
               )
