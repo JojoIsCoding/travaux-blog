@@ -1,6 +1,6 @@
 import StickyNavbar from '/components/elementsTemplates/StickyNavbar'
 import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.module.css'
-import singlePageStyles from '/styles/elementsTemplates/singleage.module.css'
+import singlePageStyles from '/styles/elementsTemplates/singlepage.module.css'
 import Footer from '/components/Footer'
 import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
 import { useRouter } from 'next/router'
