@@ -6,6 +6,14 @@ const nextConfig = {
 
 
 module.exports = () => {
+
+  const eslint  = () => {
+    return [
+      {
+        ignoreDuringBuilds: true,
+      }
+    ]
+  }
  
   const rewrites = () => {
   return [
@@ -55,6 +63,7 @@ const redirects = () => {
 }
 
 return {
+  eslint,
   rewrites,
   redirects
 }
