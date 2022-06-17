@@ -89,6 +89,7 @@ a {
 
 .normalButton {
   width: 50%;
+  font-size:18px;
   font-family: 'Karla', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
