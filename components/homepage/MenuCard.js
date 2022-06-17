@@ -22,8 +22,8 @@ const MenuCard = () => {
                     </div>
                     <div className={`${menuCardStyles.text}`}  data-aos="fade-left" data-aos-duration="1000">
                        <h2>Une toiture en bon état est importante</h2>
-                        <p>Beaucoup d'aspects du confort au sein de votre domicile sont largement liés
-                            à l'état dans lequel votre toiture se trouve. Aussi, vous devez prendre des mesures qui
+                        <p>Beaucoup d&apos;aspects du confort au sein de votre domicile sont largement liés
+                            à l&apos;état dans lequel votre toiture se trouve. Aussi, vous devez prendre des mesures qui
                             pour que le tout soit bien fonctionnel.</p>
                             <div className='buttonContainer'><div><button className='normalButton'>
                             <Link href="/1/toiture"><a>En lire plus</a></Link></button></div></div>
@@ -42,8 +42,8 @@ const MenuCard = () => {
                     </div>
                     <div className={`${menuCardStyles.text}`} data-aos="fade-right" data-aos-duration="1000">
                         <h2>Procédez à un ravalement de façade</h2>
-                        <p>Les façades de la maison impactent autant l'aspect esthétique de celle-ci que
-                            ses performances énergétiques. Aussi, quand cela s'impose, il est nécessaire de procéder
+                        <p>Les façades de la maison impactent autant l&apos;aspect esthétique de celle-ci que
+                            ses performances énergétiques. Aussi, quand cela s&apos;impose, il est nécessaire de procéder
                             à un ravalement de façade en bonne et due forme.</p>
                             <div className='buttonContainer'><div><button className='normalButton'>
                             <Link href="/2/facade"><a>En lire plus</a></Link></button></div></div>
@@ -64,7 +64,7 @@ const MenuCard = () => {
                         <h2>Optez pour les meilleures menuiseries</h2>
                         <br />
                         <p>Les éléments tels que les escaliers, portes et fenêtres doivent être choisis
-                            avec grand soin. S'ils présentent des signes d'usure, il ne faut pas trop tarder
+                            avec grand soin. S&apos;ils présentent des signes d&apos;usure, il ne faut pas trop tarder
                             avant de procéder à des travaux pour en faire la rénovation.</p>                            
                             
                             <div className='buttonContainer'><div><button className='normalButton'>

@@ -68,7 +68,7 @@ const Posts = ({ posts, length }) => {
           <div className={`container ${singlePageStyles.mainContent}`}>
             <div className={`row ${singlePageStyles.recentPosts}`}>
               {posts.data.slice(startSlice, endSlice).map(post => (
-                <div className={`col-12 col-lg-4 col-md-6`}>
+                <div key={post.id} className={`col-12 col-lg-4 col-md-6`}>
                   <img src={`${post.attributes.imageLink}`} width="100%" alt="image"/>
                   <br/>
                   <Link href={'/p/' + post.id + '/' + post.attributes.slug}

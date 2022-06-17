@@ -13,7 +13,7 @@ const Installations = () => {
       <div className={`${installationsStyles.textInCard}`}>
       <h2>Isolation</h2>
       <p>Les isolants placés à des endroits stratégiques de la maison
-        assurent qu'on ne soit pas sujets à des pertes de chaleur. 
+        assurent qu&apos;on ne soit pas sujets à des pertes de chaleur. 
         Leur intégrité doit donc être assurée en tout temps.
       </p>
       
@@ -44,8 +44,8 @@ const Installations = () => {
       </div>
       <div className={`${installationsStyles.textInCard}`}>
       <h2>Ventilation</h2>
-      <p>Une bonne ventilation vous assure de l'air frais pendant
-        les saisons chaudes. si vous avez besoin d'une réparation de ventilation,
+      <p>Une bonne ventilation vous assure de l&apos;air frais pendant
+        les saisons chaudes. si vous avez besoin d&apos;une réparation de ventilation,
         il est mieux de se tourner vers un professionnel.</p>
         
       <div className='buttonContainer'><div><button className='normalButton'>
@@ -59,9 +59,9 @@ const Installations = () => {
       </div>
       <div className={`${installationsStyles.textInCard}`}>
       <h2>Energie Solaire</h2>
-      <p>L'utilisation de panneaux solaires est une des options
-        à moyen et long terme pour faire des économies d'énergie.
-        C'est également une solution écologique, qui ne nuira pas à l'environnement. </p>
+      <p>L&apos;utilisation de panneaux solaires est une des options
+        à moyen et long terme pour faire des économies d&apos;énergie.
+        C&apos;est également une solution écologique, qui ne nuira pas à l&apos;environnement. </p>
         
       <div className='buttonContainer'><div><button className='normalButton'>
        <Link href="/7/solaire"><a>En lire plus</a></Link></button></div></div> 

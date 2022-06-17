@@ -11,7 +11,7 @@ const Categories = () => {
             .then(response => response.json())
             .then(responseData => {
             displayData = responseData.data.attributes.blogposts.data.map(function(post) {
-                return( <div>
+                return( <div key={post.id}>
                         {post.attributes.Title}
                     </div> )
             })

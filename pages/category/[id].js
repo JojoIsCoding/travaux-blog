@@ -97,7 +97,7 @@ const CatSlug = ({ category, length, cat }) => {
             {category.data.attributes.blogposts.data.slice(startSlice, endSlice).map(function (post) {
 
               return (
-                <div>
+                <div key={post.id}>
                   <div className={`${singlePageStyles.largeCardText}`}>{post.attributes.Title}</div>
                   <div className={`${singlePageStyles.smallText}`}> {post.attributes.Date} | {category.data.attributes.Name}</div>
                   <img src={`${post.attributes.imageLink}`} width="100%" alt="image" />

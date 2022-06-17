@@ -16,7 +16,7 @@ const Categories = ({ categories }) => {
       Catégories :
       <ul>
         {categories.data.map(category => (
-        <li>
+        <li key={category.id}>
         <Link href={'/' + category.id.toString() + '/' + category.attributes.Name.toString().toLowerCase()}
          key={category.id}>
         <a>{category.attributes.Name.toString().toLowerCase()}</a>

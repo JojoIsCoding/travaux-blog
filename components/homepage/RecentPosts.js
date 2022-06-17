@@ -22,7 +22,7 @@ const RecentPosts = () => {
                 <img src={`${post.attributes.imageLink}`}
                 alt="image" width="100%"/>
 
-                <div className={`${recentPostsStyles.smallText}`}>
+                <div key={post.id} className={`${recentPostsStyles.smallText}`}>
                     {post.attributes.Date} | {post.attributes.category.data.attributes.Name}, {post.attributes.tags.data.slice(0).map((tag) => {return(<span>{tag.attributes.name}</span>)})} </div> 
                     
                 <h3 className={`${recentPostsStyles.link}`}><Link href={'/p/' + post.id + '/' + post.attributes.slug}><a>{post.attributes.Title}</a></Link></h3>
