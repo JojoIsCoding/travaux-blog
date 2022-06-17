@@ -21,7 +21,7 @@ const MenuCard = () => {
                         <img src="/assets/landscape/toiture-ls.jpg" className={`${menuCardStyles.image}`} alt="house" />
                     </div>
                     <div className={`${menuCardStyles.text}`}  data-aos="fade-left" data-aos-duration="1000">
-                       <h2>Une toiture en bon état est importante</h2>
+                       <h2>Il est important qu&apos;une toiture soit en bon état.</h2>
                         <p>Beaucoup d&apos;aspects du confort au sein de votre domicile sont largement liés
                             à l&apos;état dans lequel votre toiture se trouve. Aussi, vous devez prendre des mesures qui
                             pour que le tout soit bien fonctionnel.</p>
