@@ -66,7 +66,7 @@ const Installations = () => {
       <div className='buttonContainer'><div><button className='normalButton'>
        <Link href="/7/solaire"><a>En lire plus</a></Link></button></div></div> 
       </div>   
-      </div>     
+      </div>    
 
     </div>
 
