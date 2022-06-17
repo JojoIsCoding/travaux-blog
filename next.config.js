@@ -1,19 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 
 
 module.exports = () => {
-
-  const eslint  = () => {
-    return [
-      {
-        ignoreDuringBuilds: true,
-      }
-    ]
-  }
  
   const rewrites = () => {
   return [
@@ -63,7 +58,6 @@ const redirects = () => {
 }
 
 return {
-  eslint,
   rewrites,
   redirects
 }
