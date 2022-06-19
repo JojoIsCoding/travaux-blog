@@ -8,7 +8,7 @@ const BottomForm = () => {
             <p className={`${bottomFormStyles.contactText}`}>
                 Ne manquez pas de remplir notre formulaire de contact afin de nous joindre rapidement. Nous vous mettrons
                 en contact avec un de nos agents experts pour une bonne prise en main de votre requête, et une étude de
-                votre projet immobilier.<br /><br /> </p>
+                votre projet immobilier.<br /> </p>
                 </div>
 
                 <div className={`${bottomFormStyles.formElements} col-md-6 col-12`}>
