@@ -115,6 +115,10 @@
     font-size: 24px;
   }
 
+.recentsRouteText {
+  font-size: 20px;
+}
+
   .textTooLarge {
     font-size: 20px!important;
   }

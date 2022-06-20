@@ -91,7 +91,7 @@ const MenuCard = () => {
             <div id='ContactezNous' className={`${menuCardStyles.blankSpace}`}>‎ </div>
             <div className={`${menuCardStyles.categoryBlock}`}>Contactez-nous</div>
 
-            <BottomForm />            
+            <BottomForm />           
 
         </div>
     )
