@@ -6,6 +6,7 @@ import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { NextSeo} from 'next-seo'
 
 export const getStaticPaths = async () => {
 
@@ -46,7 +47,7 @@ export const getStaticProps = async (context) => {
 
 const CatSlug = ({ category, length, cat }) => {
 
-  console.log("we're in !")
+  //console.log("we're in !")
 
   // pagination 
 
@@ -75,6 +76,8 @@ const CatSlug = ({ category, length, cat }) => {
 
   return (
     <div key={category.data.id}>
+      <NextSeo
+      title ={`${category.data.attributes.Name} | ${category.data.attributes.description}`}/>
       
       <StickyNavbar />
       <div className={`${singlePageBannerStyles.main}`}>

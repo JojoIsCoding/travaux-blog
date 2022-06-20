@@ -5,7 +5,7 @@ import singlePageStyles from '/styles/elementsTemplates/singlepage.module.css'
 import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.module.css'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
-import { match } from 'assert'
+import { NextSeo} from 'next-seo'
 
 // getStaticPaths
 
@@ -63,7 +63,8 @@ const OnePost = ({ everyPost, post, postId }) => {
 
   return (
     <div key={post.data.id}>
-
+      <NextSeo
+      title ={`${post.data.attributes.category.data.attributes.Name} | ${post.data.attributes.Title}`}/>
       <StickyNavbar />
 
       <div className={`${singlePageBannerStyles.main}`}>

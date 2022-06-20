@@ -6,6 +6,7 @@ import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import Link from 'next/link'
+import { NextSeo} from 'next-seo'
 
 export const getStaticProps = async () => {
 
@@ -46,6 +47,8 @@ const Posts = ({ posts, length }) => {
   return (
 
     <div key='200'>
+      <NextSeo
+      title ="A Vos Travaux | Tirez parti au mieux de votre maison à Alençon"/>
 
       <StickyNavbar />
 
