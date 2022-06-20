@@ -125,7 +125,7 @@ change = width.onChange = function() {
 
       </div>
 
-      <div className={`${stickyNavbarStyles.navBlank}`}>‎</div>
+      <div className={`${stickyNavbarStyles.navBlank}`}><a href="#" className={`${stickyNavbarStyles.toTopIcon}`}><img src='/icon.png' height="50px" /></a>‎</div>
       <a className={`${stickyNavbarStyles.ResponsiveIcon}`}  id="menuIcon" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="true" aria-label="Toggle navigation"><img src='/menu-icon.png' width="50px" /></a>

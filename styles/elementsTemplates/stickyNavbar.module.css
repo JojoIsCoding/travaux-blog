@@ -131,6 +131,14 @@
   top: 0;
 }
 
+.toTopIcon {
+  z-index: 5;
+  padding-top: 10px;
+  padding-left: 15px;
+  display: none;
+  top: 0;
+}
+
 .showAtDropdown {
   display: none;
 }
@@ -150,6 +158,16 @@
     top: 0;
     right: 0;
   }
+
+  .toTopIcon {
+    display: block;
+    position: absolute;
+  position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  
 
   .navbar {
     
