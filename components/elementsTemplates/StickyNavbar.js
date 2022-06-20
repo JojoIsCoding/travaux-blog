@@ -71,6 +71,33 @@ change = width.onChange = function() {
     isSmall = true
   }}
 
+  const isOpen = true
+
+  const open = e => {
+    isOpen = !isOpen
+    //console.log("menu Button!")
+  }
+
+  const closeNav = e => {
+
+    if (e.clientY > 320 && isOpen) { // when for the whole page, use e.pageY
+      document.getElementById('menuIcon').click();
+    //console.log("close!")
+    isOpen = false
+    //console.log(isOpen)
+    }
+
+    else {
+      //console.log(isOpen)
+    }
+  }
+
+  useEffect(() => {
+    document.body.addEventListener('click', closeNav)
+    document.getElementById('menuIcon').addEventListener('click', open)
+  }, []);
+
+
   return (
 
     <div id="mainDiv" key={14122} className={`${stickyNavbarStyles.mainNavDiv}`}>
