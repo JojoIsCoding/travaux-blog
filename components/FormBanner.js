@@ -15,11 +15,11 @@ const FormBanner = () => {
                         <input type="text" name="email" id="email" placeholder='Votre mail ici'
                             className={`${formBannerStyles.userInfoForm} user-info-form`} />
                     </div><br />
-                    <input type="submit" className={`${formBannerStyles.submitButton} submit-button`} />
+                    <input type="submit" value={'Envoyer'} className={`${formBannerStyles.submitButton} submit-button`} />
                 </div>
             </div>
         </div>
     )
-}
+} 
 
 export default FormBanner

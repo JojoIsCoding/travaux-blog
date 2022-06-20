@@ -19,6 +19,7 @@
 .formElements{
     display: flex;
     flex-direction: column;
+
  }
 
  .requestInput, .userInfoForm {
@@ -91,3 +92,9 @@
         height: 700px!important;
     }
   }
+
+  @-moz-document url-prefix() {
+    .requestInput, .userInfoForm, .submitButton {
+       margin-bottom: 20px;
+       }
+     } 
