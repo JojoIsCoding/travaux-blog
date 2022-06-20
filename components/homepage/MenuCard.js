@@ -62,7 +62,6 @@ const MenuCard = () => {
                     </div>
                     <div className={`${menuCardStyles.text}`} data-aos="fade-left" data-aos-duration="1000">
                         <h2>Optez pour les meilleures menuiseries</h2>
-                        <br />
                         <p>Les éléments tels que les escaliers, portes et fenêtres doivent être choisis
                             avec grand soin. S&apos;ils présentent des signes d&apos;usure, il ne faut pas trop tarder
                             avant de procéder à des travaux pour en faire la rénovation.</p>                            
