@@ -90,10 +90,10 @@ const Posts = ({ posts, length }) => {
       </div>
 
       <div className={`pagination`}>
-        <button id='prev' onClick={() => { prev(); }}
-          disabled={page <= 1}>Précédent</button> - <span> {page} </span> - <button
-            id='next' onClick={() => { next(); }}
-            disabled={page == maxPage}>Suivant</button>
+
+      <input type="image" src="/prev.png" width="50px" id='prev' onClick={() => { prev(); }}
+          disabled={page <= 1}></input> <div id="pageNumber" className={`shadow-lg`}> {page} </div> <input type="image" src="/next.png" width="50px" id='next' onClick={() => { next(); }}
+            disabled={page == maxPage}></input>
       </div>
 
       <BottomPageForm />

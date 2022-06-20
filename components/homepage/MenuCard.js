@@ -25,8 +25,8 @@ const MenuCard = () => {
                         <p>Beaucoup d&apos;aspects du confort au sein de votre domicile sont largement liés
                             à l&apos;état dans lequel votre toiture se trouve. Aussi, vous devez prendre des mesures qui
                             pour que le tout soit bien fonctionnel.</p>
-                            <div className='buttonContainer'><div><button className='normalButton'>
-                         <Link href="/1/toiture"><a>En lire plus</a></Link></button></div></div>
+                            <div className='buttonContainer'><div>
+                         <Link href="/1/toiture"><a><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></a></Link></div></div>
                     </div> 
                 </div>
             </div>
@@ -45,8 +45,8 @@ const MenuCard = () => {
                         <p>Les façades de la maison impactent autant l&apos;aspect esthétique de celle-ci que
                             ses performances énergétiques. Aussi, quand cela s&apos;impose, il est nécessaire de procéder
                             à un ravalement de façade en bonne et due forme.</p>
-                            <div className='buttonContainer'><div><button className='normalButton'>
-                            <Link href="/2/facade"><a>En lire plus</a></Link></button></div></div>
+                            <div className='buttonContainer'><div>
+                            <Link href="/2/facade"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div>
                     </div>
                 </div>
             </div>
@@ -67,8 +67,8 @@ const MenuCard = () => {
                             avec grand soin. S&apos;ils présentent des signes d&apos;usure, il ne faut pas trop tarder
                             avant de procéder à des travaux pour en faire la rénovation.</p>                            
                             
-                            <div className='buttonContainer'><div><button className='normalButton'>
-                            <Link href="/3/menuiserie"><a>En lire plus</a></Link></button></div></div>
+                            <div className='buttonContainer'><div>
+                            <Link href="/3/menuiserie"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div>
                     </div>
                 </div>
             </div>                
@@ -77,7 +77,7 @@ const MenuCard = () => {
 
             <div className={`${menuCardStyles.installationsContainer}`}>
             <div id='Installations' className={`${menuCardStyles.blankSpace}`}>‎ </div>
-            <div className={`${menuCardStyles.categoryBlock}`}>Installations</div>
+            <div className={`${menuCardStyles.categoryBlock} ${menuCardStyles.textTooLarge}`}>Installations</div>
             <Installations />
             </div>
             

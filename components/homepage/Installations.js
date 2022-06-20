@@ -17,8 +17,8 @@ const Installations = () => {
         Leur intégrité doit donc être assurée en tout temps.
       </p>
       
-      <div className='buttonContainer'><div><button className='normalButton'>
-       <Link href="/4/isolation"><a>En lire plus</a></Link></button></div></div> 
+      <div className='buttonContainer'><div>
+       <Link href="/4/isolation"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div> 
       </div>
       
       </div>
@@ -33,8 +33,8 @@ const Installations = () => {
         allié lors des baisses de températures, que ce soit la nuit ou en hiver.
         En cas de panne, ou de baisse de performances, des mesures peuvent être à prendre.
       </p>  
-      <div className='buttonContainer'><div><button className='normalButton'>
-       <Link href="/5/chauffage"><a>En lire plus</a></Link></button></div></div> 
+      <div className='buttonContainer'><div>
+       <Link href="/5/chauffage"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div> 
       </div>
       </div>
 
@@ -48,8 +48,8 @@ const Installations = () => {
         les saisons chaudes. si vous avez besoin d&apos;une réparation de ventilation,
         il est mieux de se tourner vers un professionnel.</p>
         
-      <div className='buttonContainer'><div><button className='normalButton'>
-       <Link href="/6/ventilation"><a>En lire plus</a></Link></button></div></div> 
+      <div className='buttonContainer'><div>
+       <Link href="/6/ventilation"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div> 
       </div>   
       </div>
  
@@ -63,8 +63,8 @@ const Installations = () => {
         à moyen et long terme pour faire des économies d&apos;énergie.
         C&apos;est également une solution écologique, qui ne nuira pas à l&apos;environnement. </p>
         
-      <div className='buttonContainer'><div><button className='normalButton'>
-       <Link href="/7/solaire"><a>En lire plus</a></Link></button></div></div> 
+      <div className='buttonContainer'><div>
+       <Link href="/7/solaire"><input type="image" src="/readmore.png" width="100px" className='normalButton'></input></Link></div></div> 
       </div>   
       </div>    
 

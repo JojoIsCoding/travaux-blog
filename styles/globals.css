@@ -88,7 +88,7 @@ a {
 
 
 .normalButton {
-  width: 50%;
+  width: 25%;
   font-size:18px;
   font-family: 'Karla', sans-serif;
   letter-spacing: 2px;
@@ -97,38 +97,22 @@ a {
   color: #fff;
   padding: 15px;
   font-weight: bold;
-  left: 20%;
+  left: 35%;
 
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   position: relative;
   display: inline-block;
   outline: none;
   border: none;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  7px 7px 20px 0px rgba(0,0,0,.1),
-  4px 4px 5px 0px rgba(0,0,0,.1);
-  background: rgb(81,147,141);
+  filter: drop-shadow(5px 5px 5px #222);
  z-index: 1;
 }
-.normalButton:hover:after {
-  width: 100%;
-  left: 0;
+
+.normalButton:hover {
+  filter: drop-shadow(5px 5px 5px rgb(138, 138, 138));
 }
-.normalButton:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  z-index: -1;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-  7px 7px 20px 0px rgba(0,0,0,.1),
-  4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
-  background-color: rgb(31, 78, 74);
-  right: 0;
-}
+
 .normalButton:active {
   top: 4px;
 }
@@ -140,14 +124,24 @@ button>a:hover {
 
 #prev, #next {
   border: none;
-  padding: 15px;
-  width: 130px;
+  padding: 10px;
+  width: 60px;
   margin-left: 20px;
   margin-right: 20px;
   background: steelblue;
   border-radius: 10px;
   text-transform: uppercase;
 } 
+
+#pageNumber{
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  background:  linear-gradient(#010318, #101741, #393c63);
+  width: 50px;
+}
 
 #prev:disabled, #next:disabled {
   opacity: 0.5;
