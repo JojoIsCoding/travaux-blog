@@ -8,7 +8,6 @@ const BottomPageForm = () => {
             <div className={`${bottomFormStyles.bottomForm} row form mx-0`}>
 
                 <div className={`${bottomFormStyles.formElements} col-lg-6 offset-lg-3`}>
-                <br/><br/> <br/><br/> <br/><br/>
                     <textarea id="request" className={`${bottomFormStyles.requestInput} d-flex justify-content-center`}
                         name="request" rows="6" cols="50"  placeholder='Entrez votre message ici'></textarea><br />
                     <div className={`d-flex justify-content-between`}>
