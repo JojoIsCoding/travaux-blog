@@ -75,20 +75,20 @@ change = width.onChange = function() {
 
   const open = e => {
     isOpen = !isOpen
-    console.log("menu Button!")
+    //console.log("menu Button!")
   }
 
   const closeNav = e => {
 
-    if (e.clientY > 320 && isOpen) { // when for the whole page, use e.pageY
+    if (width.width <= 768 && e.clientY > 320 && isOpen) { // when for the whole page, use e.pageY
       document.getElementById('menuIcon').click();
-    console.log("close!")
+    //console.log("close!")
     isOpen = false
-    console.log(isOpen)
+    //console.log(isOpen)
     }
 
     else {
-    console.log(isOpen)
+    //console.log(isOpen)
     }
   }
 
