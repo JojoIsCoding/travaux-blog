@@ -3,6 +3,7 @@ import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.m
 import singlePageStyles from '/styles/elementsTemplates/singlepage.module.css'
 import Footer from '/components/Footer'
 import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
+import BannerForm from '/components/formBanner'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import Link from 'next/link'
@@ -56,13 +57,20 @@ const Posts = ({ posts, length }) => {
         <div className={`${singlePageBannerStyles.style} mx-0`}>
           <div className={`${singlePageBannerStyles.bannerContainer} mx-0`}>
             <img className={`${singlePageBannerStyles.bannerImage} mx-0`}
-              src={`/assets/aération-1.jpg`} alt="Image" /></div>
-          <div className={`${singlePageBannerStyles.bannerText}`}>
-            <div className={`${singlePageBannerStyles.bannerTextCentered}`}>
-              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>Articles Récents</h1>
+              src={`/assets/aération-1.jpg`} alt="Image" />
+              </div>
+
+          <div className={`${singlePageBannerStyles.bannerText} d-flex flex-row`}>
+          <div id="text-in-banner" className={`offset-1 col-md-5 col-11 d-flex flex-column
+            align-items-start py-5`}>
+             <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>Articles Récents</h1>
               <div className={`${singlePageBannerStyles.smallBannerText}`}>Prenez soin de votre maison à Alençon</div>
             </div>
+            <div className={`col-12 col-md-6`}>
+            <BannerForm/>
+            </div> 
           </div>
+
         </div>
       </div>
  
