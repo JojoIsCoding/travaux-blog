@@ -3,7 +3,7 @@ import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.m
 import singlePageStyles from '/styles/elementsTemplates/singlepage.module.css'
 import Footer from '/components/Footer'
 import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
-import BannerForm from '/components/formBanner'
+import BannerForm from '/components/FormBanner'
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
