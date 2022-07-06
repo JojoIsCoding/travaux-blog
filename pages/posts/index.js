@@ -62,7 +62,7 @@ const Posts = ({ posts, length }) => {
 
           <div className={`${singlePageBannerStyles.bannerText} d-flex flex-row`}>
           <div id="text-in-banner" className={`offset-1 col-md-5 col-11 d-flex flex-column
-            align-items-start py-5`}>
+            align-items-center py-5`}>
              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>Articles Récents</h1>
               <div className={`${singlePageBannerStyles.smallBannerText}`}>Prenez soin de votre maison à Alençon</div>
             </div>

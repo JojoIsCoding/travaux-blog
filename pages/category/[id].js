@@ -90,7 +90,7 @@ const CatSlug = ({ category, length, cat }) => {
 
           <div className={`${singlePageBannerStyles.bannerText} d-flex flex-row`}>
           <div id="text-in-banner" className={`offset-1 col-md-5 col-11 d-flex flex-column
-            align-items-start py-5`}>
+            align-items-center py-5`}>
              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>{category.data.attributes.Name}</h1>
               <div className={`${singlePageBannerStyles.smallBannerText}`}>{category.data.attributes.description}</div>
             </div>
