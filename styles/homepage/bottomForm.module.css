@@ -4,7 +4,7 @@
     margin-top: 35px;
     padding: 25px;
     background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url('/assets/maison/house-3.jpg');
     margin-bottom: 0px;
     display: flex;

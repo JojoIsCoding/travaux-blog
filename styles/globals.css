@@ -170,3 +170,9 @@ button>a:hover {
   transition: 1s ease-in-out;
 }
 }
+
+label {
+  color: white;
+  padding-top: 7px;
+  font-size: 16px;
+}

@@ -11,16 +11,27 @@ const BottomForm = () => {
                 votre projet immobilier.<br /> </p>
                 </div>
 
-                <div className={`${bottomFormStyles.formElements} col-md-6 col-12`}>
-                    <textarea id="request" className={`${bottomFormStyles.requestInput} d-flex justify-content-center`}
-                        name="request" rows="6" cols="50"  placeholder='Entrez votre message ici'></textarea><br />
-                    <div className={`d-flex justify-content-between`}>
-                        <input type="text" name="Name" id="Name" placeholder='Votre nom'
-                        className={`${bottomFormStyles.userInfoForm}`} />
-                        <input type="text" name="email" id="email" placeholder='Votre email'
-                        className={`${bottomFormStyles.userInfoForm}`} />
+                <div className={`${bottomFormStyles.formElements} form-elements col-md-6 col-12`}>
+
+
+                    <div className={`col-12 d-flex justify-content-between`}>
+                    <label for="Name" className={`${bottomFormStyles.label} col-4`}>Nom et Prénom : </label><input type="text" name="Name" id="Name" placeholder='ex: Jean Dujardin'
+                            className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
                     </div><br />
-                    <input type="submit" value={'Envoyer'} className={`${bottomFormStyles.submitButton}`} />
+                    <div className={`col-12 d-flex justify-content-between`}>
+                    <label for="email" className={`${bottomFormStyles.label} col-4`}>Votre email : </label><input type="email" name="email" id="email" placeholder='ex: jean@mail.com'
+                            className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
+                    </div><br />
+                    <div className={`col-12 d-flex justify-content-between`}>
+                    <label for="postalCode" className={`${bottomFormStyles.label} col-4`}>Code postal : </label><input autocomplete="nope" type="text" name="codePostal" id="codePostal" placeholder='ex: 75001'
+                            className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
+                    </div><br />
+                    <div className={`col-12 d-flex justify-content-between`}>
+                    <label for="phoneNumber" className={`${bottomFormStyles.label} col-4`}>N° de téléphone : </label><input type="tel" name="phoneNumber" id="phoneNumber" placeholder='ex: +3301020304'
+                            className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
+                    </div><br />
+                    
+                    <input type="submit" value={'Envoyer'} className={`${bottomFormStyles.submitButton} submit-button`} />
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import Footer from '/components/Footer'
 import BottomPageForm from '/components/elementsTemplates/BottomPageForm'
 import singlePageStyles from '/styles/elementsTemplates/singlepage.module.css'
 import singlePageBannerStyles from '/styles/elementsTemplates/singlePageBanner.module.css'
+import BannerForm from '/components/formBanner'
 import ReactMarkdown from 'react-markdown'
 import Link from 'next/link'
 import { NextSeo} from 'next-seo'
@@ -69,16 +70,26 @@ const OnePost = ({ everyPost, post, postId }) => {
 
       <div className={`${singlePageBannerStyles.main}`}>
         <div className={`${singlePageBannerStyles.style} mx-0`}>
+
           <div className={`${singlePageBannerStyles.bannerContainer} mx-0`}>
             <img className={`${singlePageBannerStyles.bannerImage} mx-0`}
-              src={`${post.data.attributes.imageLink}`} alt="Image" /></div>
-          <div className={`${singlePageBannerStyles.bannerText}`}>
-            <div className={`${singlePageBannerStyles.bannerTextCentered}`}>
-              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>{post.data.attributes.Title}</h1>
+              src={`${post.data.attributes.imageLink}`} alt="Image" />
+          </div>
+
+          <div className={`${singlePageBannerStyles.bannerText} d-flex flex-row`}>
+            {/* <div className={`${singlePageBannerStyles.bannerTextCentered}`}></div> */}
+      <div id="text-in-banner" className={`offset-1 col-md-5 col-11 d-flex flex-column
+            align-items-center py-5`}>
+            <h1 className={`${singlePageBannerStyles.bannerTextCentered}`}>{post.data.attributes.Title}</h1>
             </div>
+            <div className={`col-12 col-md-6`}>
+            <BannerForm/>
+            </div>            
           </div>
         </div>
       </div>
+
+
 
       <div className={`container`}>
         <div className={`row`}>

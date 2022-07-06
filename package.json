@@ -23,7 +23,8 @@
     "node-fetch": "^3.2.4",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "react-markdown": "^8.0.3"
+    "react-markdown": "^8.0.3",
+    "vicopo": "^1.2.1"
   },
   "devDependencies": {
     "eslint": "8.15.0",

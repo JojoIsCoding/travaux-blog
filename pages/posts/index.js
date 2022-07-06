@@ -65,7 +65,7 @@ const Posts = ({ posts, length }) => {
           </div>
         </div>
       </div>
-
+ 
       <div className={`container`}>
         <div className={`row`}>
           <div className={`container ${singlePageStyles.mainContent}`}>
