@@ -19,7 +19,7 @@ const BottomPageForm = () => {
         className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
 </div><br />
 <div className={`col-12 d-flex justify-content-between`}>
-<label htmlFor="postalCode" className={`${bottomFormStyles.label} col-4`}>Code postal : </label><input autocomplete="nope" type="text" name="codePostal" id="codePostal" placeholder='ex: 75001'
+<label htmlFor="postalCode" className={`${bottomFormStyles.label} col-4`}>Code postal : </label><input autoComplete="nope" type="text" name="codePostal" id="codePostal" placeholder='ex: 75001'
         className={`${bottomFormStyles.userInfoForm} col-8 user-info-form`} />
 </div><br />
 <div className={`col-12 d-flex justify-content-between`}>
