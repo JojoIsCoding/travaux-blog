@@ -128,7 +128,6 @@ button>a:hover {
   width: 60px;
   margin-left: 20px;
   margin-right: 20px;
-  background: steelblue;
   border-radius: 10px;
   text-transform: uppercase;
 } 
@@ -141,6 +140,7 @@ button>a:hover {
   padding-top: 10px;
   background:  linear-gradient(#010318, #101741, #393c63);
   width: 50px;
+  border-radius: 10px;
 }
 
 #prev:disabled, #next:disabled {
