@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 768px) {
+
+.smallBannerForm {
+    display: none;
+}
     
 .bannerText {
     position : absolute;
@@ -94,13 +98,13 @@
 }
 
 .singlePageTitle {
-    font-size: 48px!important;
+    font-size: 38px!important;
     text-align: center;
 }
 
 .smallBannerText {
-    font-size: 36px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 1.1;
     font-weight: 300;
     text-align: center;
 }

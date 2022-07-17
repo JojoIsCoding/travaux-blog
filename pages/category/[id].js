@@ -94,7 +94,7 @@ const CatSlug = ({ category, length, cat }) => {
              <h1 className={`${singlePageBannerStyles.singlePageTitle}`}>{category.data.attributes.Name}</h1>
               <div className={`${singlePageBannerStyles.smallBannerText}`}>{category.data.attributes.description}</div>
             </div>
-            <div className={`col-12 col-md-6`}>
+            <div className={`${singlePageBannerStyles.smallBannerForm} col-12 col-md-6`}>
             <BannerForm/>
             </div> 
           </div>
