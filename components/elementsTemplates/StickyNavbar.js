@@ -71,7 +71,7 @@ change = width.onChange = function() {
     isSmall = true
   }}
 
-  const isOpen = true
+  const isOpen = false
 
   const open = e => {
     isOpen = !isOpen
